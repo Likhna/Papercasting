@@ -6,10 +6,10 @@
 $user_follow = dbquery(" SELECT * FROM `user_follow` WHERE `follower` = '$follower' AND `following` = '$following'; ");
 $check_status = dbrows($user_follow);
 
-$sub = false; //Boolean var which states if subscribed or not
+$sub = false; 
 
 if ( $check_status !== 0 ){ //Pseudo code
-    $sub = true; //If row is found, they are subscribed, so set $sub to true
+    $sub = true; 
 }
 
 if($sub){

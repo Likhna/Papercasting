@@ -8,7 +8,7 @@ $check_status = dbrows($user_follow);
 
 $sub = false; 
 
-if ( $check_status !== 0 ){ //Pseudo code
+if ( $check_status !== 0 ){
     $sub = true; 
 }
 
